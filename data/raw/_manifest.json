@@ -1,0 +1,58 @@
+{
+  "dataset": "admitflow-synthetic-admissions",
+  "dataset_version": "1.0.0",
+  "synthetic": true,
+  "fictuality_notice": "The primary project dataset is synthetic and was generated according to the documented AdmitFlow admission-funnel specification for development, experimentation, evaluation, and demonstration. It does not represent any real institution, applicant, or admission outcome.",
+  "performance_disclaimer": "Any metric computed on this dataset is a property of the documented generator assumptions. It must never be reported as real-world institutional performance.",
+  "contract": "docs/admitflow_data_contract.md",
+  "data_dictionary": "docs/data_dictionary.md",
+  "generator": "scripts/generate_dataset.py",
+  "schema": "scripts/admitflow_schema.py",
+  "config": {
+    "n_applications": 28000,
+    "n_cycles": 4,
+    "start_cycle_year": 2022,
+    "seed": 20240817,
+    "min_history_weeks": 4,
+    "min_applications_per_cell": 60,
+    "max_applications_per_applicant": 3,
+    "reuse_prob_same_cycle": 0.11,
+    "reuse_prob_previous_cycle": 0.025,
+    "forecast_horizons_weeks": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "float_format": "%.6f",
+    "dataset_version": "1.0.0"
+  },
+  "numpy_version": "2.2.6",
+  "pandas_version": "2.3.3",
+  "row_counts": {
+    "dim_funnel_stage": 7,
+    "dim_region": 8,
+    "dim_programme": 12,
+    "dim_admission_cycle": 4,
+    "dim_campaign": 32,
+    "fact_applicant": 25279,
+    "fact_application": 28000,
+    "fact_funnel_event": 84383,
+    "fact_engagement": 38369,
+    "fact_forecast_panel": 2064,
+    "applications_modelling_view": 12161
+  },
+  "sha256": {
+    "data/raw/dim_funnel_stage.csv": "f40522ece45689ddd8ffe9c55e205a286937e03361b6d51dfdfac6e959664883",
+    "data/raw/dim_region.csv": "f437d6e173003e42b5af514c6952781c7fdbdbe06d4d71187df2947c7fc91cfb",
+    "data/raw/dim_programme.csv": "2011c7d4d5b8f4d8b87fd85823ff12e74e121af096b55965dfdda8035a553e9f",
+    "data/raw/dim_admission_cycle.csv": "f07d7ecbb1d2ef68cfe2f18db2e04ee49757751883da56e14f2d82b847b43d19",
+    "data/raw/dim_campaign.csv": "75a51f543bff7bf780b61749d77d5d7b9080b2211d2d63b3466518b848e946af",
+    "data/raw/fact_applicant.csv": "c2b3fa9a515396285906377bfbc0250c5288cb67192a8cbe54cfe4b4302d19ee",
+    "data/raw/fact_application.csv": "88e37a7126a5b00ce573a37c44006acb78c1a2f1cea992f9549dbe5bb84dab87",
+    "data/raw/fact_funnel_event.csv": "bc22bc0425786ba2890e2458551092372a237338e41ab93e75c484968cb216a8",
+    "data/raw/fact_engagement.csv": "e5437ef38ca67108d4654e7bfb8eaa3eb0e0bc8cc3b10108305c2a35416c9b8f",
+    "data/raw/fact_forecast_panel.csv": "34f9451276c1062e4b8b1ec8b3260af6adf47ddbd4b820496549c2ebaeb89509",
+    "data/processed/applications_modelling_view.csv": "f9c88af6dccbc7320a72b2edaab933323afe159cf813a18b2abc0bea2a5ee154"
+  }
+}

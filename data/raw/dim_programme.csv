@@ -1,0 +1,13 @@
+programme_id,programme_name,programme_code,faculty,award_level,duration_years,annual_fee_inr,base_seat_capacity,selectivity_tier,review_duration_days,demand_weight,campus_region_id
+PGM-01,B.Sc. Data Science,BSC-DS,Faculty of Science,UG,4,195500,90,high,7.326000,0.133134,REG-01
+PGM-02,B.Sc. Computer Science,BSC-CS,Faculty of Technology,UG,4,167500,120,high,6.585000,0.155834,REG-01
+PGM-03,B.Sc. Information Technology,BSC-IT,Faculty of Technology,UG,3,122000,90,medium,6.249000,0.113757,REG-02
+PGM-04,B.Sc. Mathematics,BSC-MA,Faculty of Science,UG,3,123000,60,medium,7.376000,0.051844,REG-01
+PGM-05,B.Sc. Biotechnology,BSC-BT,Faculty of Science,UG,3,159000,60,high,7.734000,0.065573,REG-01
+PGM-06,B.Sc. Physics,BSC-PH,Faculty of Science,UG,3,106000,45,medium,7.914000,0.037071,REG-01
+PGM-07,B.Com (Hons.),BCOM-H,Faculty of Commerce,UG,3,101000,150,emerging,4.416000,0.120851,REG-02
+PGM-08,BBA,BBA,Faculty of Management,UG,3,117000,120,medium,4.141000,0.096820,REG-02
+PGM-09,BCA,BCA,Faculty of Technology,UG,3,97500,90,emerging,3.610000,0.095805,REG-02
+PGM-10,B.A. Economics,BA-EC,Faculty of Humanities,UG,3,74000,60,emerging,3.370000,0.050482,REG-03
+PGM-11,B.Sc. Food Technology,BSC-FT,Faculty of Science,UG,3,143000,45,emerging,5.944000,0.031140,REG-05
+PGM-12,B.Com (Taxation & Finance),BCOM-TF,Faculty of Commerce,UG,3,78000,75,emerging,4.067000,0.047690,REG-03

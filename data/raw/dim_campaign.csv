@@ -1,0 +1,33 @@
+campaign_id,campaign_name,channel,cycle_id,start_date,end_date,planned_budget_inr,target_group,is_active
+CMP-2022-AGT,AY2022-23 Partner Counsellor Push,partner_agency,CYC-2022,2022-06-03,2022-12-19,745000,all_programmes,True
+CMP-2022-AGTN,AY2022-23 NRI & Overseas Desk,partner_agency,CYC-2022,2022-06-09,2022-12-04,650000,science_and_technology,True
+CMP-2022-EML,AY2022-23 Prospectus Nurture,email_campaign,CYC-2022,2022-06-13,2022-12-02,880000,commerce_and_management,True
+CMP-2022-EMLoh,AY2022-23 Open House Follow-up,email_campaign,CYC-2022,2022-06-03,2022-12-04,515000,all_programmes,True
+CMP-2022-PAID,AY2022-23 Prospecting - Search,paid_search,CYC-2022,2022-06-01,2022-11-30,725000,all_programmes,True
+CMP-2022-PAIDBR,AY2022-23 Brand Defence - Search,paid_search,CYC-2022,2022-06-19,2022-12-20,425000,science_and_technology,True
+CMP-2022-SOC,AY2022-23 Reach - Instagram & YouTube,social_media,CYC-2022,2022-06-03,2022-12-18,685000,open_house_followup,True
+CMP-2022-SOCRT,AY2022-23 Retargeting - Site Visitors,social_media,CYC-2022,2022-06-07,2022-12-18,395000,science_and_technology,True
+CMP-2023-AGT,AY2023-24 Partner Counsellor Push,partner_agency,CYC-2023,2023-06-08,2023-12-16,490000,all_programmes,True
+CMP-2023-AGTN,AY2023-24 NRI & Overseas Desk,partner_agency,CYC-2023,2023-06-04,2023-12-17,355000,science_and_technology,True
+CMP-2023-EML,AY2023-24 Prospectus Nurture,email_campaign,CYC-2023,2023-06-01,2023-12-03,270000,commerce_and_management,True
+CMP-2023-EMLoh,AY2023-24 Open House Follow-up,email_campaign,CYC-2023,2023-06-10,2023-12-16,585000,all_programmes,True
+CMP-2023-PAID,AY2023-24 Prospecting - Search,paid_search,CYC-2023,2023-06-21,2023-12-17,710000,all_programmes,True
+CMP-2023-PAIDBR,AY2023-24 Brand Defence - Search,paid_search,CYC-2023,2023-06-15,2023-12-11,1775000,science_and_technology,True
+CMP-2023-SOC,AY2023-24 Reach - Instagram & YouTube,social_media,CYC-2023,2023-06-15,2023-12-18,685000,open_house_followup,True
+CMP-2023-SOCRT,AY2023-24 Retargeting - Site Visitors,social_media,CYC-2023,2023-06-04,2023-12-05,620000,science_and_technology,True
+CMP-2024-AGT,AY2024-25 Partner Counsellor Push,partner_agency,CYC-2024,2024-06-07,2024-12-14,2125000,all_programmes,True
+CMP-2024-AGTN,AY2024-25 NRI & Overseas Desk,partner_agency,CYC-2024,2024-06-08,2024-12-07,885000,science_and_technology,True
+CMP-2024-EML,AY2024-25 Prospectus Nurture,email_campaign,CYC-2024,2024-06-15,2024-12-01,505000,commerce_and_management,True
+CMP-2024-EMLoh,AY2024-25 Open House Follow-up,email_campaign,CYC-2024,2024-06-04,2024-12-08,795000,all_programmes,True
+CMP-2024-PAID,AY2024-25 Prospecting - Search,paid_search,CYC-2024,2024-06-12,2024-12-04,1060000,all_programmes,True
+CMP-2024-PAIDBR,AY2024-25 Brand Defence - Search,paid_search,CYC-2024,2024-06-21,2024-12-04,1485000,science_and_technology,True
+CMP-2024-SOC,AY2024-25 Reach - Instagram & YouTube,social_media,CYC-2024,2024-06-07,2024-12-10,820000,open_house_followup,True
+CMP-2024-SOCRT,AY2024-25 Retargeting - Site Visitors,social_media,CYC-2024,2024-06-15,2024-12-12,300000,science_and_technology,True
+CMP-2025-AGT,AY2025-26 Partner Counsellor Push,partner_agency,CYC-2025,2025-06-19,2025-12-15,460000,all_programmes,True
+CMP-2025-AGTN,AY2025-26 NRI & Overseas Desk,partner_agency,CYC-2025,2025-06-02,2025-12-09,195000,science_and_technology,True
+CMP-2025-EML,AY2025-26 Prospectus Nurture,email_campaign,CYC-2025,2025-06-12,2025-12-02,685000,commerce_and_management,True
+CMP-2025-EMLoh,AY2025-26 Open House Follow-up,email_campaign,CYC-2025,2025-06-10,2025-12-19,690000,all_programmes,True
+CMP-2025-PAID,AY2025-26 Prospecting - Search,paid_search,CYC-2025,2025-06-07,2025-12-07,375000,all_programmes,True
+CMP-2025-PAIDBR,AY2025-26 Brand Defence - Search,paid_search,CYC-2025,2025-06-06,2025-12-14,420000,science_and_technology,True
+CMP-2025-SOC,AY2025-26 Reach - Instagram & YouTube,social_media,CYC-2025,2025-06-03,2025-12-05,515000,open_house_followup,True
+CMP-2025-SOCRT,AY2025-26 Retargeting - Site Visitors,social_media,CYC-2025,2025-06-13,2025-12-08,780000,science_and_technology,True

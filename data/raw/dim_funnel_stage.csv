@@ -1,0 +1,8 @@
+stage_order,stage_code,stage_name,stage_kind,allows_reentry,requires_all_prior_stages,stage_description
+1,prospect,Prospect / inquiry,CUMULATIVE_MILESTONE,False,True,"Lead record raised against a programme and admission cycle by marketing, walk-in, partner or self-initiated enquiry."
+2,application_started,Application started,CUMULATIVE_MILESTONE,False,True,"Applicant opened the online application form. Re-opening the form is an engagement day, not a second milestone; the milestone timestamp is the first session."
+3,application_submitted,Application submitted,CUMULATIVE_MILESTONE,False,True,Application payload submitted on or before the intake round close date. This is the prediction point of the primary task.
+4,application_verified,Application verified,CUMULATIVE_MILESTONE,False,True,Documents received and checked as complete and eligibility-checked. May contain an internal doc-query loop before the milestone is granted.
+5,admission_decision,Decision released,CUMULATIVE_MILESTONE,False,True,"A formal dated decision (admit or reject) released to the applicant. One decision per application, ever."
+6,admitted,Admitted,CUMULATIVE_MILESTONE,False,True,Seat allotted and offer conditions cleared. Reached only by admits.
+7,enrolled,Enrolled,CUMULATIVE_MILESTONE,False,True,Registration completed and first instalment recorded. Primary target milestone.

@@ -1,0 +1,9 @@
+region_id,region_name,region_type,mean_distance_km_to_campus,region_inquiry_weight
+REG-01,Metro North,metro,185.996000,0.217840
+REG-02,Metro East,metro,241.119000,0.176862
+REG-03,Coastal South,tier2,653.422000,0.148648
+REG-04,Highland West,tier2,779.379000,0.125352
+REG-05,Central Plains,tier3,725.749000,0.105318
+REG-06,Eastern Belt,tier3,630.707000,0.090348
+REG-07,Desert Fringe,rural_remote,1083.878000,0.076712
+REG-08,Hill Tracts,rural_remote,1301.549000,0.058919

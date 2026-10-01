@@ -1,0 +1,9 @@
+# AdmitFlow synthetic dataset — runtime requirements
+# Python 3.10+ is required (the pipeline uses PEP 604 / builtin generics in annotations).
+#
+# Deliberately minimal. The generator, validator and profiler use nothing beyond numpy and
+# pandas: no scikit-learn, no plotting, no notebooks, no database, no cloud client.
+# Modelling libraries are intentionally absent - model training is a downstream step and
+# must not be implied by the dataset deliverable.
+numpy>=1.24,<3
+pandas>=2.0,<3
