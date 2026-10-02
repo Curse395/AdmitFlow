@@ -21,8 +21,6 @@ coverage/
 *.parquet
 *.pkl
 *.joblib
-*.xlsx
-*.xls
 
 # IDEs
 .vscode/
