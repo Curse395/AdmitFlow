@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.env.*
+
+# Node / frontend
+node_modules/
+.next/
+build/
+dist/
+coverage/
+*.log
+
+# Data / artifacts
+*.csv
+*.parquet
+*.pkl
+*.joblib
+*.xlsx
+*.xls
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# Git / OS artifacts
+*.swp
+*.tmp
+Thumbs.db
+
+# Local evidence and secrets
+secrets/
+*.pem
+*.key
+
+# Keep project tracker tracked only when needed
+# Commented intentionally to allow manual inclusion of generated files
+# TRACKER.xlsx
