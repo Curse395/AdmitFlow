@@ -39,8 +39,8 @@ AdmitFlow follows a simple layered architecture designed for maintainability and
 ### Backend layer
 
 - FastAPI application
-- protected endpoints for authenticated users
-- audit logging for data and user actions
+- bearer-JWT protected analytics endpoints
+- process-local audit logging for user and scenario actions
 - explicit Pydantic schemas for request and response models
 
 ### Frontend layer
@@ -60,7 +60,7 @@ AdmitFlow follows a simple layered architecture designed for maintainability and
 
 ## 3. Recommended stack
 
-- Python 3.11+
+- Python 3.10+
 - FastAPI
 - SQLAlchemy or lightweight data layer depending on persistence needs
 - scikit-learn

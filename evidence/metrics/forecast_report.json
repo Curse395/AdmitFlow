@@ -1,0 +1,67 @@
+{
+  "training_years": 6,
+  "holdout_years": 2,
+  "metrics": {
+    "mae": 14.55,
+    "rmse": 15.5726,
+    "mape": 0.2733
+  },
+  "horizons": {
+    "H1": 74.2,
+    "H2": 77.3,
+    "H4": 83.5,
+    "H6": 89.7
+  },
+  "forecast_years": [
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032
+  ],
+  "series": [
+    {
+      "cycle_year": 2021,
+      "applications": 684,
+      "admissions": 122,
+      "enrolments": 60,
+      "year_index": 0
+    },
+    {
+      "cycle_year": 2022,
+      "applications": 708,
+      "admissions": 110,
+      "enrolments": 54,
+      "year_index": 1
+    },
+    {
+      "cycle_year": 2023,
+      "applications": 708,
+      "admissions": 117,
+      "enrolments": 58,
+      "year_index": 2
+    },
+    {
+      "cycle_year": 2024,
+      "applications": 692,
+      "admissions": 134,
+      "enrolments": 69,
+      "year_index": 3
+    },
+    {
+      "cycle_year": 2025,
+      "applications": 712,
+      "admissions": 112,
+      "enrolments": 59,
+      "year_index": 4
+    },
+    {
+      "cycle_year": 2026,
+      "applications": 696,
+      "admissions": 113,
+      "enrolments": 51,
+      "year_index": 5
+    }
+  ]
+}

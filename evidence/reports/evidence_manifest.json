@@ -1,0 +1,20 @@
+{
+  "captured_at_utc": "2026-10-02T13:17:44.901645+00:00",
+  "dataset_path": "data\\admission_data.csv",
+  "dataset_rows": 4200,
+  "dataset_validation_passed": true,
+  "model_artifact": "evidence\\models\\admitflow_model.joblib",
+  "generated_evidence": [
+    "dataset/validation_report.json",
+    "metrics/analytics_report.json",
+    "metrics/forecast_report.json",
+    "metrics/scenario_report.json",
+    "models/model_report.json",
+    "models/admitflow_model.joblib",
+    "api/api_smoke.json",
+    "security/auth_check.json",
+    "screenshots/dashboard.png",
+    "screenshots/dashboard-mobile.png",
+    "screenshots/scenario.png"
+  ]
+}

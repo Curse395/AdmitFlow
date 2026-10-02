@@ -1,0 +1,124 @@
+{
+  "rows": 4200,
+  "report": {
+    "rows": 4200,
+    "columns": 22,
+    "missing_values": {},
+    "duplicates": 0,
+    "invalid_categories": [],
+    "invalid_dates": 0,
+    "issues": [],
+    "is_valid": true
+  },
+  "dashboard": {
+    "applicants": 4200,
+    "applications": 4200,
+    "admissions": 708,
+    "enrolments": 351,
+    "admission_rate": 16.86,
+    "enrolment_rate": 8.36,
+    "overall_conversion": 8.36
+  },
+  "funnel": {
+    "baseline_applications": 4200,
+    "enrolled": 351,
+    "overall_conversion": 8.36,
+    "stage_summary": [
+      {
+        "stage": "lead",
+        "volume": 4200,
+        "conversion_rate": 1.0,
+        "from_previous_stage": null,
+        "conversion_to_next": 0.7395238095238095,
+        "stage_order": 0
+      },
+      {
+        "stage": "application",
+        "volume": 3106,
+        "conversion_rate": 0.7395238095238095,
+        "from_previous_stage": 0.7395238095238095,
+        "conversion_to_next": 0.6384417256922086,
+        "stage_order": 1
+      },
+      {
+        "stage": "submitted",
+        "volume": 1983,
+        "conversion_rate": 0.47214285714285714,
+        "from_previous_stage": 0.6384417256922086,
+        "conversion_to_next": 0.5118507312153303,
+        "stage_order": 2
+      },
+      {
+        "stage": "review",
+        "volume": 1015,
+        "conversion_rate": 0.24166666666666667,
+        "from_previous_stage": 0.5118507312153303,
+        "conversion_to_next": 0.6975369458128079,
+        "stage_order": 3
+      },
+      {
+        "stage": "admitted",
+        "volume": 708,
+        "conversion_rate": 0.16857142857142857,
+        "from_previous_stage": 0.6975369458128079,
+        "conversion_to_next": 0.4957627118644068,
+        "stage_order": 4
+      },
+      {
+        "stage": "enrolled",
+        "volume": 351,
+        "conversion_rate": 0.08357142857142857,
+        "from_previous_stage": 0.4957627118644068,
+        "conversion_to_next": null,
+        "stage_order": 5
+      }
+    ]
+  },
+  "programme_comparison": [
+    {
+      "programme": "Computer Science",
+      "applicants": 841,
+      "applications": 841,
+      "admissions": 144,
+      "enrolments": 76,
+      "admission_rate": 0.17122473246135553,
+      "enrolment_rate": 0.09036860879904875
+    },
+    {
+      "programme": "AI Engineering",
+      "applicants": 864,
+      "applications": 864,
+      "admissions": 147,
+      "enrolments": 78,
+      "admission_rate": 0.1701388888888889,
+      "enrolment_rate": 0.09027777777777778
+    },
+    {
+      "programme": "Data Science",
+      "applicants": 807,
+      "applications": 807,
+      "admissions": 136,
+      "enrolments": 68,
+      "admission_rate": 0.16852540272614622,
+      "enrolment_rate": 0.08426270136307311
+    },
+    {
+      "programme": "Business Analytics",
+      "applicants": 850,
+      "applications": 850,
+      "admissions": 144,
+      "enrolments": 67,
+      "admission_rate": 0.16941176470588235,
+      "enrolment_rate": 0.07882352941176471
+    },
+    {
+      "programme": "Applied Mathematics",
+      "applicants": 838,
+      "applications": 838,
+      "admissions": 137,
+      "enrolments": 62,
+      "admission_rate": 0.16348448687350836,
+      "enrolment_rate": 0.07398568019093078
+    }
+  ]
+}

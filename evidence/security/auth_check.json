@@ -1,0 +1,6 @@
+{
+  "login_status": 200,
+  "unauthenticated_dashboard_status": 401,
+  "authenticated_dashboard_status": 200,
+  "token_or_password_written": false
+}

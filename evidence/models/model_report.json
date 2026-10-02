@@ -1,0 +1,126 @@
+{
+  "baseline": {
+    "log_loss": 0.6611,
+    "roc_auc": 0.5573,
+    "pr_auc": 0.0964,
+    "accuracy": 0.6143,
+    "precision": 0.1028,
+    "recall": 0.4659,
+    "f1": 0.1684,
+    "confusion_matrix": [
+      [
+        604,
+        358
+      ],
+      [
+        47,
+        41
+      ]
+    ],
+    "top_features": [
+      {
+        "feature": "num__gpa",
+        "absolute_coefficient": 0.52295
+      },
+      {
+        "feature": "cat__selectivity_Highly Selective",
+        "absolute_coefficient": 0.423558
+      },
+      {
+        "feature": "cat__selectivity_Broad Access",
+        "absolute_coefficient": 0.407896
+      },
+      {
+        "feature": "cat__campaign_source_Event",
+        "absolute_coefficient": 0.219037
+      },
+      {
+        "feature": "cat__region_North",
+        "absolute_coefficient": 0.201671
+      },
+      {
+        "feature": "cat__campaign_source_Social",
+        "absolute_coefficient": 0.175076
+      },
+      {
+        "feature": "cat__campaign_source_Direct",
+        "absolute_coefficient": 0.16964
+      },
+      {
+        "feature": "cat__programme_Computer Science",
+        "absolute_coefficient": 0.150902
+      },
+      {
+        "feature": "cat__campaign_source_Search",
+        "absolute_coefficient": 0.137349
+      },
+      {
+        "feature": "cat__programme_Applied Mathematics",
+        "absolute_coefficient": 0.089972
+      }
+    ],
+    "model": "Logistic Regression"
+  },
+  "advanced": {
+    "log_loss": 0.2975,
+    "roc_auc": 0.5195,
+    "pr_auc": 0.1037,
+    "accuracy": 0.9162,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "confusion_matrix": [
+      [
+        962,
+        0
+      ],
+      [
+        88,
+        0
+      ]
+    ],
+    "top_features": [
+      {
+        "feature": "num__academic_score",
+        "importance": 0.119886
+      },
+      {
+        "feature": "num__engagement_score",
+        "importance": 0.115197
+      },
+      {
+        "feature": "num__interest_score",
+        "importance": 0.112826
+      },
+      {
+        "feature": "num__distance_km",
+        "importance": 0.112438
+      },
+      {
+        "feature": "num__gpa",
+        "importance": 0.107654
+      },
+      {
+        "feature": "num__campaign_clicks",
+        "importance": 0.088419
+      },
+      {
+        "feature": "num__outreach_count",
+        "importance": 0.068417
+      },
+      {
+        "feature": "num__cycle_year",
+        "importance": 0.05096
+      },
+      {
+        "feature": "cat__region_South",
+        "importance": 0.014438
+      },
+      {
+        "feature": "cat__region_Central",
+        "importance": 0.013828
+      }
+    ],
+    "model": "Random Forest"
+  }
+}

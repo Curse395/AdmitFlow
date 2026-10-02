@@ -1,0 +1,352 @@
+{
+  "dashboard": {
+    "applicants": 4200,
+    "applications": 4200,
+    "admissions": 708,
+    "enrolments": 351,
+    "admission_rate": 16.86,
+    "enrolment_rate": 8.36,
+    "overall_conversion": 8.36
+  },
+  "funnel": {
+    "baseline_applications": 4200,
+    "enrolled": 351,
+    "overall_conversion": 8.36,
+    "stage_summary": [
+      {
+        "stage": "lead",
+        "volume": 4200,
+        "conversion_rate": 1.0,
+        "from_previous_stage": null,
+        "conversion_to_next": 0.7395238095238095,
+        "stage_order": 0
+      },
+      {
+        "stage": "application",
+        "volume": 3106,
+        "conversion_rate": 0.7395238095238095,
+        "from_previous_stage": 0.7395238095238095,
+        "conversion_to_next": 0.6384417256922086,
+        "stage_order": 1
+      },
+      {
+        "stage": "submitted",
+        "volume": 1983,
+        "conversion_rate": 0.47214285714285714,
+        "from_previous_stage": 0.6384417256922086,
+        "conversion_to_next": 0.5118507312153303,
+        "stage_order": 2
+      },
+      {
+        "stage": "review",
+        "volume": 1015,
+        "conversion_rate": 0.24166666666666667,
+        "from_previous_stage": 0.5118507312153303,
+        "conversion_to_next": 0.6975369458128079,
+        "stage_order": 3
+      },
+      {
+        "stage": "admitted",
+        "volume": 708,
+        "conversion_rate": 0.16857142857142857,
+        "from_previous_stage": 0.6975369458128079,
+        "conversion_to_next": 0.4957627118644068,
+        "stage_order": 4
+      },
+      {
+        "stage": "enrolled",
+        "volume": 351,
+        "conversion_rate": 0.08357142857142857,
+        "from_previous_stage": 0.4957627118644068,
+        "conversion_to_next": null,
+        "stage_order": 5
+      }
+    ]
+  },
+  "cycle_cohorts": [
+    {
+      "cycle_year": 2021,
+      "applicants": 684,
+      "admissions": 122,
+      "enrolments": 60,
+      "admission_rate": 0.1783625730994152,
+      "enrolment_rate": 0.08771929824561403,
+      "sample_sufficiency": "Sufficient"
+    },
+    {
+      "cycle_year": 2022,
+      "applicants": 708,
+      "admissions": 110,
+      "enrolments": 54,
+      "admission_rate": 0.1553672316384181,
+      "enrolment_rate": 0.07627118644067797,
+      "sample_sufficiency": "Sufficient"
+    },
+    {
+      "cycle_year": 2023,
+      "applicants": 708,
+      "admissions": 117,
+      "enrolments": 58,
+      "admission_rate": 0.1652542372881356,
+      "enrolment_rate": 0.08192090395480225,
+      "sample_sufficiency": "Sufficient"
+    },
+    {
+      "cycle_year": 2024,
+      "applicants": 692,
+      "admissions": 134,
+      "enrolments": 69,
+      "admission_rate": 0.1936416184971098,
+      "enrolment_rate": 0.09971098265895954,
+      "sample_sufficiency": "Sufficient"
+    },
+    {
+      "cycle_year": 2025,
+      "applicants": 712,
+      "admissions": 112,
+      "enrolments": 59,
+      "admission_rate": 0.15730337078651685,
+      "enrolment_rate": 0.08286516853932584,
+      "sample_sufficiency": "Sufficient"
+    },
+    {
+      "cycle_year": 2026,
+      "applicants": 696,
+      "admissions": 113,
+      "enrolments": 51,
+      "admission_rate": 0.16235632183908047,
+      "enrolment_rate": 0.07327586206896551,
+      "sample_sufficiency": "Sufficient"
+    }
+  ],
+  "programme_cohorts": [
+    {
+      "programme": "AI Engineering",
+      "applicants": 864,
+      "admissions": 147,
+      "enrolments": 78,
+      "admission_rate": 0.1701388888888889,
+      "enrolment_rate": 0.09027777777777778,
+      "sample_sufficiency": "Sufficient"
+    },
+    {
+      "programme": "Applied Mathematics",
+      "applicants": 838,
+      "admissions": 137,
+      "enrolments": 62,
+      "admission_rate": 0.16348448687350836,
+      "enrolment_rate": 0.07398568019093078,
+      "sample_sufficiency": "Sufficient"
+    },
+    {
+      "programme": "Business Analytics",
+      "applicants": 850,
+      "admissions": 144,
+      "enrolments": 67,
+      "admission_rate": 0.16941176470588235,
+      "enrolment_rate": 0.07882352941176471,
+      "sample_sufficiency": "Sufficient"
+    },
+    {
+      "programme": "Computer Science",
+      "applicants": 841,
+      "admissions": 144,
+      "enrolments": 76,
+      "admission_rate": 0.17122473246135553,
+      "enrolment_rate": 0.09036860879904875,
+      "sample_sufficiency": "Sufficient"
+    },
+    {
+      "programme": "Data Science",
+      "applicants": 807,
+      "admissions": 136,
+      "enrolments": 68,
+      "admission_rate": 0.16852540272614622,
+      "enrolment_rate": 0.08426270136307311,
+      "sample_sufficiency": "Sufficient"
+    }
+  ],
+  "region_cohorts": [
+    {
+      "region": "South",
+      "applicants": 841,
+      "admissions": 136,
+      "enrolments": 78,
+      "admission_rate": 0.16171224732461356,
+      "enrolment_rate": 0.09274673008323424
+    },
+    {
+      "region": "East",
+      "applicants": 802,
+      "admissions": 147,
+      "enrolments": 74,
+      "admission_rate": 0.18329177057356608,
+      "enrolment_rate": 0.09226932668329177
+    },
+    {
+      "region": "Central",
+      "applicants": 842,
+      "admissions": 163,
+      "enrolments": 76,
+      "admission_rate": 0.19358669833729217,
+      "enrolment_rate": 0.09026128266033254
+    },
+    {
+      "region": "West",
+      "applicants": 847,
+      "admissions": 132,
+      "enrolments": 69,
+      "admission_rate": 0.15584415584415584,
+      "enrolment_rate": 0.08146399055489964
+    },
+    {
+      "region": "North",
+      "applicants": 868,
+      "admissions": 130,
+      "enrolments": 54,
+      "admission_rate": 0.1497695852534562,
+      "enrolment_rate": 0.06221198156682028
+    }
+  ],
+  "selectivity_cohorts": [
+    {
+      "selectivity": "Highly Selective",
+      "applicants": 835,
+      "admissions": 200,
+      "enrolments": 98,
+      "admission_rate": 0.23952095808383234,
+      "enrolment_rate": 0.11736526946107785
+    },
+    {
+      "selectivity": "Selective",
+      "applicants": 2013,
+      "admissions": 347,
+      "enrolments": 169,
+      "admission_rate": 0.17237953303527073,
+      "enrolment_rate": 0.08395429706905116
+    },
+    {
+      "selectivity": "Broad Access",
+      "applicants": 1352,
+      "admissions": 161,
+      "enrolments": 84,
+      "admission_rate": 0.11908284023668639,
+      "enrolment_rate": 0.0621301775147929
+    }
+  ],
+  "programme_comparison": [
+    {
+      "programme": "Computer Science",
+      "applicants": 841,
+      "applications": 841,
+      "admissions": 144,
+      "enrolments": 76,
+      "admission_rate": 0.17122473246135553,
+      "enrolment_rate": 0.09036860879904875
+    },
+    {
+      "programme": "AI Engineering",
+      "applicants": 864,
+      "applications": 864,
+      "admissions": 147,
+      "enrolments": 78,
+      "admission_rate": 0.1701388888888889,
+      "enrolment_rate": 0.09027777777777778
+    },
+    {
+      "programme": "Data Science",
+      "applicants": 807,
+      "applications": 807,
+      "admissions": 136,
+      "enrolments": 68,
+      "admission_rate": 0.16852540272614622,
+      "enrolment_rate": 0.08426270136307311
+    },
+    {
+      "programme": "Business Analytics",
+      "applicants": 850,
+      "applications": 850,
+      "admissions": 144,
+      "enrolments": 67,
+      "admission_rate": 0.16941176470588235,
+      "enrolment_rate": 0.07882352941176471
+    },
+    {
+      "programme": "Applied Mathematics",
+      "applicants": 838,
+      "applications": 838,
+      "admissions": 137,
+      "enrolments": 62,
+      "admission_rate": 0.16348448687350836,
+      "enrolment_rate": 0.07398568019093078
+    }
+  ],
+  "attribution": [
+    {
+      "campaign_source": "Partner",
+      "applications": 749,
+      "submitted": 352,
+      "admissions": 128,
+      "enrolments": 63,
+      "share_of_applications": 0.17833333333333334,
+      "admission_conversion": 0.17089452603471295,
+      "enrolment_conversion": 0.08411214953271028,
+      "attribution_note": "Descriptive attribution only; this is not proof of causal impact."
+    },
+    {
+      "campaign_source": "Event",
+      "applications": 718,
+      "submitted": 328,
+      "admissions": 120,
+      "enrolments": 56,
+      "share_of_applications": 0.17095238095238094,
+      "admission_conversion": 0.1671309192200557,
+      "enrolment_conversion": 0.07799442896935933,
+      "attribution_note": "Descriptive attribution only; this is not proof of causal impact."
+    },
+    {
+      "campaign_source": "Direct",
+      "applications": 716,
+      "submitted": 341,
+      "admissions": 108,
+      "enrolments": 48,
+      "share_of_applications": 0.17047619047619048,
+      "admission_conversion": 0.15083798882681565,
+      "enrolment_conversion": 0.0670391061452514,
+      "attribution_note": "Descriptive attribution only; this is not proof of causal impact."
+    },
+    {
+      "campaign_source": "Referral",
+      "applications": 678,
+      "submitted": 306,
+      "admissions": 102,
+      "enrolments": 58,
+      "share_of_applications": 0.16142857142857142,
+      "admission_conversion": 0.1504424778761062,
+      "enrolment_conversion": 0.0855457227138643,
+      "attribution_note": "Descriptive attribution only; this is not proof of causal impact."
+    },
+    {
+      "campaign_source": "Social",
+      "applications": 674,
+      "submitted": 349,
+      "admissions": 134,
+      "enrolments": 65,
+      "share_of_applications": 0.16047619047619047,
+      "admission_conversion": 0.19881305637982197,
+      "enrolment_conversion": 0.09643916913946587,
+      "attribution_note": "Descriptive attribution only; this is not proof of causal impact."
+    },
+    {
+      "campaign_source": "Search",
+      "applications": 665,
+      "submitted": 307,
+      "admissions": 116,
+      "enrolments": 61,
+      "share_of_applications": 0.15833333333333333,
+      "admission_conversion": 0.17443609022556392,
+      "enrolment_conversion": 0.09172932330827067,
+      "attribution_note": "Descriptive attribution only; this is not proof of causal impact."
+    }
+  ]
+}

@@ -21,6 +21,8 @@ coverage/
 *.parquet
 *.pkl
 *.joblib
+!data/admission_data.csv
+!evidence/models/*.joblib
 
 # IDEs
 .vscode/

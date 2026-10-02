@@ -1,0 +1,47 @@
+{
+  "health_status": 200,
+  "login_status": 200,
+  "unauthenticated_dashboard_status": 401,
+  "authenticated_routes": {
+    "dashboard": {
+      "status_code": 200,
+      "ok": true
+    },
+    "funnel": {
+      "status_code": 200,
+      "ok": true
+    },
+    "cohorts": {
+      "status_code": 200,
+      "ok": true
+    },
+    "programmes": {
+      "status_code": 200,
+      "ok": true
+    },
+    "attribution": {
+      "status_code": 200,
+      "ok": true
+    },
+    "forecast": {
+      "status_code": 200,
+      "ok": true
+    },
+    "scenarios": {
+      "status_code": 200,
+      "ok": true
+    },
+    "model": {
+      "status_code": 200,
+      "ok": true
+    },
+    "audit": {
+      "status_code": 200,
+      "ok": true
+    },
+    "scenario_run": {
+      "status_code": 200,
+      "ok": true
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "baseline": {
+    "applications": 4200,
+    "submitted": 1983,
+    "admitted": 708,
+    "enrolled": 351,
+    "admission_rate": 16.86,
+    "enrolment_rate": 8.36
+  },
+  "scenario": {
+    "applications": 5000,
+    "submitted": 2479,
+    "admitted": 910,
+    "enrolled": 435,
+    "admission_rate": 18.2,
+    "enrolment_rate": 8.7
+  },
+  "difference": {
+    "applications": 800,
+    "submitted": 496,
+    "admitted": 202,
+    "enrolled": 84
+  },
+  "percentage_change": {
+    "applications": 19.05,
+    "submitted": 25.01,
+    "admitted": 28.53,
+    "enrolled": 23.93
+  },
+  "campaign_shift": {
+    "Search": 0.04,
+    "Referral": 0.06,
+    "Social": 0.02
+  },
+  "deterministic": true
+}
