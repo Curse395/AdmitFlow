@@ -12,7 +12,8 @@
 - All analytics routes require bearer authentication. Missing credentials return HTTP 401; local CORS allows the configured Vite origins without credential cookies.
 - API smoke checks cover all ten protected route operations and pass.
 - Frontend tests cover authentication headers, cohort selection, attribution, scenarios, and theme toggling.
-- Backend tests pass (16), frontend tests pass (3), frontend lint is clean, and the production build succeeds; see the captured logs under `evidence/tests/`.
+- The optional assistant uses the server-side Groq integration with aggregate context, returns a graceful 503/offline state when no provider key is configured, and never exposes the key to the frontend.
+- Backend tests pass (20), frontend tests pass (3), frontend lint is clean, and the production build succeeds; see the captured logs under `evidence/tests/`.
 
 ## Limitations
 
@@ -21,6 +22,7 @@
 - The forecast uses only six annual observations and has a two-year holdout; its extrapolations are illustrative, not operational forecasts.
 - The build succeeds but Vite warns that the minified JavaScript bundle is larger than 500 kB.
 - OAuth is not configured. The local demo credential is not a production identity system.
+- Live provider-generated answers are not verified in this environment because `GROQ_API_KEY` is not configured; mocked-provider contract tests and the offline state are verified.
 
 ## Evidence paths
 

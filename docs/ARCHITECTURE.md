@@ -39,7 +39,8 @@ AdmitFlow follows a simple layered architecture designed for maintainability and
 ### Backend layer
 
 - FastAPI application
-- bearer-JWT protected analytics endpoints
+- SQLite-backed bearer sessions protecting analytics endpoints
+- optional server-side Groq assistant grounded in aggregate analytics and scenario results
 - process-local audit logging for user and scenario actions
 - explicit Pydantic schemas for request and response models
 

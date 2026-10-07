@@ -53,6 +53,7 @@ def evaluate_forecast(df: pd.DataFrame) -> dict:
     }
 
     return {
+        "model": "LinearRegression",
         "training_years": int(len(series)),
         "holdout_years": int(len(y_test)),
         "metrics": {
@@ -62,6 +63,10 @@ def evaluate_forecast(df: pd.DataFrame) -> dict:
         },
         "horizons": horizons,
         "forecast_years": [int(year) for year in future_years],
+        "future_series": [
+            {"cycle_year": int(year), "enrolments": round(float(value), 2)}
+            for year, value in zip(future_years, future_forecast)
+        ],
         "series": series.to_dict(orient="records"),
     }
 

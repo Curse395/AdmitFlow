@@ -9,12 +9,12 @@ All machine-readable reports are generated from the current code and dataset usi
 | Forecast | `evidence/metrics/forecast_report.json` | Temporal holdout metrics and H1/H2/H4/H6 outputs. |
 | Scenario | `evidence/metrics/scenario_report.json` | Deterministic baseline, scenario, delta, and percentage change. |
 | Model | `evidence/models/model_report.json`, `evidence/models/admitflow_model.joblib` | Holdout metrics, confusion matrices, feature signals, and serialized estimators. |
-| API | `evidence/api/api_smoke.json` | Health, login, unauthorized rejection, protected route responses, and scenario execution. |
+| API and AI readiness | `evidence/api/api_smoke.json` | Health, login, unauthorized rejection, protected analytics/assistant-status routes, and scenario execution. |
 | Security | `evidence/security/auth_check.json` | Authentication boundary and confirmation that credentials/tokens were not written. |
 | Backend tests | `evidence/tests/backend_pytest.txt` | Current pytest output. |
 | Frontend tests | `evidence/tests/frontend_vitest.txt` | Current Vitest output. |
 | Frontend lint/build | `evidence/tests/frontend_lint.txt`, `evidence/tests/frontend_build.txt` | Current lint and production build output. |
-| UI captures | `evidence/screenshots/dashboard.png`, `evidence/screenshots/dashboard-mobile.png`, `evidence/screenshots/scenario.png` | Authenticated dashboard at desktop/mobile widths and a live doubled-volume scenario result. |
+| UI captures | `evidence/screenshots/dashboard-redesign.png`, `evidence/screenshots/dashboard-dark.png`, `evidence/screenshots/dashboard-mobile-redesign.png`, `evidence/screenshots/scenario-redesign.png`, `evidence/screenshots/login-redesign.png`, `evidence/screenshots/assistant-offline.png` | Live desktop/dark/mobile dashboard, simulation, premium login, and graceful assistant-offline state. |
 | Verification manifest | `evidence/reports/evidence_manifest.json` | Capture timestamp, dataset row count, and generated artifact list. |
 
 Evidence describes this local synthetic-data implementation only. The model results are weak and must not be represented as validated admissions predictions.

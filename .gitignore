@@ -21,6 +21,7 @@ coverage/
 *.parquet
 *.pkl
 *.joblib
+*.sqlite3
 !data/admission_data.csv
 !evidence/models/*.joblib
 
@@ -42,3 +43,5 @@ secrets/
 # Keep project tracker tracked only when needed
 # Commented intentionally to allow manual inclusion of generated files
 # TRACKER.xlsx
+.vercel
+.env*

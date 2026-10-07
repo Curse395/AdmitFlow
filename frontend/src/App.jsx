@@ -11,7 +11,7 @@ import {
 } from './pages/WorkspacePages'
 import './App.css'
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000'
+const API_BASE = import.meta.env.VITE_API_BASE_URL || (import.meta.env.DEV ? 'http://127.0.0.1:8000' : '')
 const pageContext = {
   Dashboard: ['OVERVIEW', 'Monitor application momentum and admission outcomes.'],
   Funnel: ['ANALYTICS / CONVERSION', 'Inspect how applicants move through each stage.'],
@@ -55,14 +55,15 @@ function LoadingWorkspace() {
 function LoginPage({ onLogin, onUseDemo, loading, error, theme, onToggleTheme }) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const showDemoAccess = import.meta.env.DEV
   return <main className="login-layout">
     <section className="login-story">
       <div className="login-brand"><span className="brand-symbol" aria-hidden="true"><span /><span /><span /></span><span>Admit<span>Flow</span></span></div>
       <div className="login-story-copy"><p className="eyebrow">ADMISSION INTELLIGENCE & FORECASTING</p><h1>Turn admission data into <em>predictable growth.</em></h1><p>One clear view of your applicant journey, programme performance, and enrollment outlook.</p></div>
       <div className="login-visual" aria-hidden="true"><div className="login-visual-grid"/><div className="login-funnel-line line-one"/><div className="login-funnel-line line-two"/><div className="login-funnel-line line-three"/><div className="login-node node-one"/><div className="login-node node-two"/><div className="login-node node-three"/><div className="login-data-readout"><span>ENROLMENT OUTLOOK</span><strong>H1 <i /></strong><small>Signal ready</small></div></div>
-      <div className="login-story-footer"><span>ADMITFLOW / LOCAL WORKSPACE</span><span>DATA, MADE DECISIVE</span></div>
+      <div className="login-story-footer"><span>ADMITFLOW / ADMISSION INTELLIGENCE</span><span>DATA, MADE DECISIVE</span></div>
     </section>
-    <section className="login-access-area"><button className="login-theme-toggle icon-button" type="button" onClick={onToggleTheme} aria-label={`Switch to ${theme==='dark'?'light':'dark'} theme`}>{theme==='dark'?<Sun size={17}/>:<Moon size={17}/>}</button><div className="login-access-card"><div className="access-card-top"><div className="access-icon"><CircleUserRound size={19}/></div><span className="context-badge"><i className="mini-live"/> Protected access</span></div><p className="eyebrow">WELCOME BACK</p><h2>Secure access</h2><p className="login-intro">Sign in to your admission intelligence workspace.</p><form onSubmit={(event)=>{event.preventDefault();onLogin({email,password})}} className="login-form"><label>Email address<input type="email" autoComplete="username" value={email} onChange={(event)=>setEmail(event.target.value)} placeholder="you@institution.edu" required/></label><label>Password<input type="password" autoComplete="current-password" value={password} onChange={(event)=>setPassword(event.target.value)} placeholder="Enter your password" required/></label><button className="primary-button login-submit" type="submit" disabled={loading}>{loading?<><span className="button-spinner"/> Securing workspace</>:<>Sign in <span>→</span></>}</button>{error&&<p className="login-error" role="alert">{error}</p>}</form><div className="login-divider"><span/>Local evaluation access<span/></div><button className="demo-access-button" type="button" onClick={onUseDemo}>Use demo access</button><p className="login-security-note">Demo sign-in is available for local evaluation. Credentials are not displayed in the interface.</p></div><div className="login-help"><span>AdmitFlow</span><span>Admission intelligence for enrollment teams</span></div></section>
+    <section className="login-access-area"><button className="login-theme-toggle icon-button" type="button" onClick={onToggleTheme} aria-label={`Switch to ${theme==='dark'?'light':'dark'} theme`}>{theme==='dark'?<Sun size={17}/>:<Moon size={17}/>}</button><div className="login-access-card"><div className="access-card-top"><div className="access-icon"><CircleUserRound size={19}/></div><span className="context-badge"><i className="mini-live"/> Protected access</span></div><p className="eyebrow">WELCOME BACK</p><h2>Secure access</h2><p className="login-intro">Sign in to your admission intelligence workspace.</p><form onSubmit={(event)=>{event.preventDefault();onLogin({email,password})}} className="login-form"><label>Email address<input type="email" autoComplete="username" value={email} onChange={(event)=>setEmail(event.target.value)} placeholder="you@institution.edu" required/></label><label>Password<input type="password" autoComplete="current-password" value={password} onChange={(event)=>setPassword(event.target.value)} placeholder="Enter your password" required/></label><button className="primary-button login-submit" type="submit" disabled={loading}>{loading?<><span className="button-spinner"/> Securing workspace</>:<>Sign in <span>→</span></>}</button>{error&&<p className="login-error" role="alert">{error}</p>}</form>{showDemoAccess&&<><div className="login-divider"><span/>Local evaluation access<span/></div><button className="demo-access-button" type="button" onClick={onUseDemo}>Use demo access</button><p className="login-security-note">Demo sign-in is available for local evaluation. Credentials are not displayed in the interface.</p></>}</div><div className="login-help"><span>AdmitFlow</span><span>Admission intelligence for enrollment teams</span></div></section>
   </main>
 }
 
@@ -162,6 +163,7 @@ export default function App() {
   }
 
   async function useDemoAccess() {
+    if (!import.meta.env.DEV) return
     await submitLogin({email:'admin@admitflow.local',password:'admin123'})
   }
 

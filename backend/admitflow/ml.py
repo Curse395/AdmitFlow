@@ -44,8 +44,8 @@ def train_model(df: pd.DataFrame, artifact_path: str | Path = MODEL_ARTIFACT_PAT
     X, y = prepare_model_data(df)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42, stratify=y)
 
-    categorical = [col for col in X.columns if X[col].dtype == "object"]
-    numerical = [col for col in X.columns if col not in categorical]
+    numerical = [col for col in X.columns if pd.api.types.is_numeric_dtype(X[col].dtype)]
+    categorical = [col for col in X.columns if col not in numerical]
 
     preprocessor = ColumnTransformer(
         transformers=[

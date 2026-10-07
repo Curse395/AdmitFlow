@@ -19,13 +19,13 @@ TASK_EVIDENCE = {
     "A6": (".git; Git history", "Repository initialized; implementation and verification milestone recorded in Git history."),
     "A7": ("evidence/dataset/dataset_summary.json; evidence/dataset/validation_report.json", "Fixed-seed 4,200-row dataset passes validation."),
     "A8": ("evidence/metrics/analytics_report.json", "Cumulative funnel analytics generated from current dataset."),
-    "A9": ("evidence/metrics/analytics_report.json", "Cycle, programme, region, and selectivity cohorts generated."),
+    "A9": ("evidence/metrics/analytics_report.json; evidence/api/api_smoke.json", "Cycle, programme, region, selectivity, and campaign-source cohorts generated."),
     "A10": ("evidence/metrics/analytics_report.json", "Campaign attribution is explicitly descriptive, not causal."),
     "A11": ("evidence/models/model_report.json; evidence/models/admitflow_model.joblib", "Training and feature summaries captured. Predictive quality is weak; models are not decision-ready."),
     "A12": ("evidence/metrics/forecast_report.json", "H1/H2/H4/H6 evaluated; only six annual observations are available."),
     "A13": ("evidence/metrics/scenario_report.json; evidence/api/api_smoke.json", "Deterministic scenario engine and authenticated route verified."),
-    "A14": ("evidence/api/api_smoke.json; evidence/security/auth_check.json", "Protected API routes and missing-token rejection verified; audit log is process-local."),
-    "A15": ("evidence/screenshots/dashboard.png; evidence/screenshots/dashboard-mobile.png; evidence/screenshots/scenario.png; evidence/tests/frontend_vitest.txt", "Desktop/mobile dashboard and live scenario captured; interactions covered by Vitest."),
+    "A14": ("evidence/api/api_smoke.json; evidence/security/auth_check.json; docs/API.md", "Protected API, aggregate-grounded optional AI route, and missing-token rejection verified; audit log is process-local."),
+    "A15": ("evidence/screenshots/dashboard-redesign.png; evidence/screenshots/dashboard-dark.png; evidence/screenshots/dashboard-mobile-redesign.png; evidence/screenshots/scenario-redesign.png; evidence/screenshots/login-redesign.png; evidence/screenshots/assistant-offline.png; evidence/tests/frontend_vitest.txt", "Redesigned desktop/mobile workspaces and graceful AI-offline state captured; interactions covered by Vitest."),
     "A16": ("evidence/tests/backend_pytest.txt; evidence/tests/frontend_vitest.txt; evidence/tests/frontend_lint.txt; evidence/tests/frontend_build.txt", "Automated suites pass; production build has a disclosed chunk-size warning."),
     "A17": ("docs/FINAL_PROJECT_REPORT.md; docs/FINAL_VERIFICATION.md", "Final documentation completed with evidence and limitations."),
 }
@@ -36,7 +36,7 @@ EVIDENCE_ROWS = [
     ("AF-E03", "A11", "Model report and artifact", "evidence/models/model_report.json; evidence/models/admitflow_model.joblib", "GENERATED_WITH_LIMITATIONS", "Random forest predicts no positives at threshold 0.5; not decision-ready."),
     ("AF-E04", "A12", "Forecast report", "evidence/metrics/forecast_report.json", "PASS_WITH_LIMITATIONS", "Two-year holdout over six annual observations."),
     ("AF-E05", "A13", "Scenario report", "evidence/metrics/scenario_report.json", "PASS", "Deterministic baseline/scenario/delta output."),
-    ("AF-E06", "A14", "API smoke report", "evidence/api/api_smoke.json", "PASS", "10/10 authenticated API operations successful."),
+    ("AF-E06", "A14", "API smoke report", "evidence/api/api_smoke.json", "PASS", "11/11 authenticated API smoke operations successful."),
     ("AF-E07", "A14", "Auth boundary report", "evidence/security/auth_check.json", "PASS", "401 without token; token/password omitted from report."),
     ("AF-E08", "A15", "Desktop dashboard screenshot", "evidence/screenshots/dashboard.png", "CAPTURED", "Authenticated live dashboard at desktop viewport."),
     ("AF-E09", "A15", "Mobile dashboard screenshot", "evidence/screenshots/dashboard-mobile.png", "CAPTURED", "Authenticated live dashboard at 390px viewport."),
@@ -46,6 +46,7 @@ EVIDENCE_ROWS = [
     ("AF-E13", "A16", "Production build", "evidence/tests/frontend_build.txt", "PASS_WITH_WARNING", "Build succeeds; bundle exceeds 500 kB warning."),
     ("AF-E14", "A17", "Final verification documents", "docs/FINAL_VERIFICATION.md; docs/FINAL_PROJECT_REPORT.md", "PASS", "Status and limitations stated explicitly."),
     ("AF-E15", "A15", "Scaled scenario screenshot", "evidence/screenshots/scenario.png", "CAPTURED", "Live UI scenario at twice the baseline application volume; stage totals and changes shown."),
+    ("AF-E16", "A15", "Redesigned experience captures", "evidence/screenshots/dashboard-redesign.png; evidence/screenshots/dashboard-dark.png; evidence/screenshots/dashboard-mobile-redesign.png; evidence/screenshots/scenario-redesign.png; evidence/screenshots/login-redesign.png; evidence/screenshots/assistant-offline.png", "CAPTURED", "Live dashboard, dark theme, mobile dashboard, scenario workspace, premium login, and AI provider fallback."),
 ]
 
 
@@ -105,7 +106,7 @@ def main() -> None:
         ["AF-T02", "A16", "Frontend Vitest suite", "npm test", "All tests pass", f"{frontend_passed} passed", "PASS", "evidence/tests/frontend_vitest.txt"],
         ["AF-T03", "A16", "Frontend lint", "npm run lint", "No diagnostics", "Clean" if not lint_output.strip().endswith("warning") else lint_output[-200:], "PASS", "evidence/tests/frontend_lint.txt"],
         ["AF-T04", "A16", "Frontend production build", "npm run build", "Build succeeds", "Build succeeded; bundle-size warning present", "PASS_WITH_WARNING", "evidence/tests/frontend_build.txt"],
-        ["AF-T05", "A14", "Authenticated API smoke checks", "python scripts/capture_evidence.py", "Protected routes respond successfully", "10/10 operations successful", "PASS", "evidence/api/api_smoke.json"],
+        ["AF-T05", "A14", "Authenticated API smoke checks", "python scripts/capture_evidence.py", "Protected routes respond successfully", "11/11 operations successful", "PASS", "evidence/api/api_smoke.json"],
     ]
     for row in test_rows:
         test_sheet.append(row)

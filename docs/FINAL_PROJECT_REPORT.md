@@ -16,7 +16,7 @@ The linear annual forecast reports MAE 14.55, RMSE 15.5726, and MAPE 0.2733 on a
 
 ## Application and verification
 
-The FastAPI service exposes health, authentication, protected analytics, forecast, scenario, model, and audit routes. Scenario counts scale with the requested application volume, preserve monotonic stage counts, and reject negative input. The React application includes dashboard, funnel, cycle/programme/region/selectivity cohorts, programme comparison, descriptive attribution, forecasting, editable scenario inputs, model feature signals, audit activity, and light/dark themes. The UI sends its bearer JWT with protected requests and avoids fabricated fallback metrics.
+The FastAPI service exposes health, authentication, protected analytics, forecast, scenario, model, audit, and optional AI assistant routes. Scenario counts scale with the requested application volume, preserve monotonic stage counts, and reject negative input. The React application includes an executive dashboard, funnel, cycle/programme/region/selectivity/campaign cohorts, programme detail, descriptive attribution, forecast workspace, editable scenario lab, model intelligence, activity timeline, light/dark themes, keyboard search, and a global assistant drawer. The assistant uses the server-side Groq provider only when configured, receives aggregate data only, and returns a clear offline state without a key. The UI sends its bearer JWT with protected requests and avoids fabricated fallback metrics.
 
 The evidence-capture script reports valid dataset checks and successful authenticated API smoke checks. Backend tests, frontend tests, lint, and build are recorded under `evidence/tests/`. Build output includes a non-blocking large-chunk warning.
 

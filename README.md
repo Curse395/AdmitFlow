@@ -53,6 +53,8 @@ npm run dev
 
 Open `http://localhost:5173`. The local demo credentials are `admin@admitflow.local` / `admin123`; they are for local evaluation only and must not be reused in a deployed system. The API creates a random JWT signing key per process unless `ADMITFLOW_JWT_SECRET` is configured with at least 32 characters. Configure a stable secret when running multiple workers or across restarts.
 
+The AI assistant is optional. Set `GROQ_API_KEY` in the backend environment or an ignored root `.env` file to enable provider-backed answers; without it, all analytics and planning workflows remain available and the assistant reports its offline state. See `docs/API.md` for configuration details.
+
 ## Verify
 
 ```powershell

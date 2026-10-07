@@ -87,6 +87,7 @@ def main() -> None:
         ("scenarios", "/api/scenarios"),
         ("model", "/api/model"),
         ("audit", "/api/audit"),
+        ("assistant_status", "/api/assistant/status"),
     ]
     api_results = {
         name: {"status_code": response.status_code, "ok": response.is_success}
@@ -137,6 +138,12 @@ def main() -> None:
                 "screenshots/dashboard.png",
                 "screenshots/dashboard-mobile.png",
                 "screenshots/scenario.png",
+                "screenshots/dashboard-redesign.png",
+                "screenshots/dashboard-dark.png",
+                "screenshots/dashboard-mobile-redesign.png",
+                "screenshots/scenario-redesign.png",
+                "screenshots/login-redesign.png",
+                "screenshots/assistant-offline.png",
             ],
         },
     )
