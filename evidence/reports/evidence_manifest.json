@@ -13,8 +13,9 @@
     "models/admitflow_model.joblib",
     "api/api_smoke.json",
     "security/auth_check.json",
-    "screenshots/dashboard.png",
-    "screenshots/dashboard-mobile.png",
-    "screenshots/scenario.png"
+    "archive/screenshots/dashboard.png",
+    "archive/screenshots/dashboard-mobile.png",
+    "screenshots/scenario.png",
+    "archive/screenshots/scenario-redesign.png"
   ]
 }
